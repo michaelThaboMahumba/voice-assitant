@@ -1,0 +1,129 @@
+<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="sign up for free and login into  pixel a personal assitant">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+
+</head>
+<body style="background-image:linear-gradient(
+    23deg,
+    hsl(49deg 100% 69%) 0%,
+    hsl(16deg 80% 61%) 2%,
+    hsl(330deg 81% 34%) 12%,
+    hsl(259deg 100% 15%) 50%,
+    hsl(212deg 100% 25%) 88%,
+    hsl(197deg 100% 30%) 98%,
+    hsl(183deg 79% 36%) 100%
+  );
+  height: 100vh;"> 
+  <button class="btnLogin-popup">In order to continue press the button to login in</button>
+   <div class="wrapper">
+        <span class="icon-close"></span>
+    <div class="form-box Login">
+        <h2>LOGIN</h2>
+        <form action=""class="jarvis_setup">
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" name="email" id="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" name="password" id="password"style="color: #fff;">
+                <label for="password">password</label>
+            </div>
+            <div class="remember-forgot">
+                <label for="savalogin"><input type="checkbox" id="savalogin"></label>
+                <a href="#">Forgot password?</a>
+            </div>
+        <button type="submit"class="btn"onclick="auth()" value="save">submit</button>
+        <div class="login-register">
+            <p>Don't have account&nbsp;&nbsp;<a href="#"class="register-link">register</a></p>
+        </div>
+        </form>
+        </div>
+        <div class="form-box register">
+            <h2>Sign Up</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon">  <i class='bx bx-user' ></i></span>
+                    <input type="text"  id="name"autocomplete>
+                    <label for="name">username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email"required>
+                    <label for="email">Email</label>
+                </div>
+    
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password">
+                    <label for="password">password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="" id="saveRegister"></label>
+                    <a href="licence.html">I agree to the terms & conditions</a>
+                </div>
+            <button type="submit"class="btn"value="submit">submit</button>
+            <div class="Login-register">
+                <p>already have an account &nbsp;&nbsp;&nbsp;<a href="#"class="login-link">login</a></p>
+            </div>
+            </form>
+            </div>
+   </div> 
+<script>
+    //login and sign up setup
+    // get elements data 
+const iconclose=document.querySelector('.icon-close');
+const wrapper=document.querySelector('.wrapper');
+const loginlink=document.querySelector('.login-link');
+const signup=document.querySelector('.register-link');
+const btnpopup=document.querySelector('.btnLogin-popup')
+
+signup.addEventListener('click',()=>{
+    wrapper.classList.add('active');
+});
+loginlink.addEventListener('click',()=>{
+    wrapper.classList.remove('active');
+});
+btnpopup.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+});
+iconclose.addEventListener('click',()=>{
+    wrapper.classList.remove('active-popup');
+});
+function auth(){
+   var password=document.getElementById("password").value;
+   var email=document.getElementById("email").value;
+   //conditions window.open("https://web.whatsapp.com/");
+if(email=='${email}' && password=='${password}'){
+   window.location.assign("index.html");
+   window.open("index.html");
+alert("login succefully");
+}
+else{
+   alert("Failed please try again later");
+ return;
+}
+}
+</script>
+<script src="ai.js"></script>
+</body>
+</html>
+<?php
+extract($_REQUEST);
+$file=fopen("userlogs.txt","a");
+fwrite($file,"name:");
+fwrite($file,$username."/n");
+fwrite($file,"Email");
+fwrite($file,$email ."/n");
+fwrite($file,"password :");
+fwrite($file,$password."/n");
+fclose($file);
+?>

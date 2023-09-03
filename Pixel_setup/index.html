@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pixel a voice assistant to help browse the web" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ai.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="start_pixel-btn.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+</head>
+<body>
+  <div id="preloader">
+  </div>
+  <audio src="Jarvis.mp3" id="j_intro"></audio>
+    <audio src="power up.mp3" id="turn_on"></audio>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-user-circle'></i>
+            <div class="logo_name">PIXEL</div>
+            <i class='bx bx-menu' id="btn" ></i>
+           
+        </div>
+        <ul class="nav-list">
+          
+        
+          <li>
+           <a href="profile.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">User</span>
+           </a>
+           <span class="tooltip">User</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Messages</span>
+           </a>
+           <span class="tooltip">Messages</span>
+           
+         </li>
+
+         <li>
+          <a href="#">
+           <i class='bx bx-list-ol'></i>
+            <span class="links_name">Music</span>
+          </a>
+          <span class="tooltip">Play</span>
+        </li>
+        <li>
+
+        
+         <li>
+           <a href="#">
+            <i class='bx bx-list-ol'></i>
+             <span class="links_name">Commands</span>
+           </a>
+           <span class="tooltip">Commands</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">File Manager</span>
+           </a>
+           <span class="tooltip">Files</span>
+         </li>
+         <li>
+           <a href="#">
+             <i class='bx bx-cog' ></i>
+             <span class="links_name">Setting</span>
+           </a>
+           <span class="tooltip">Setting</span>
+         </li>
+         <li class="profile">
+             <div class="profile-details">
+               <img src="home-img_1.JPG" alt="profileImg">&nbsp;
+               <p id="logout">log out</p><div class="name_job">
+                 <div class="name"></div>
+                 <div class="job"></div>
+               </div>
+             </div>
+           <a href="log.html"><i class='bx bx-log-out' id="log_out" ></i></a>  
+         </li>
+        </ul>
+      </div>  
+        <nav>
+          
+            </div>
+          </div>
+            <img src="" alt=""class="logo">
+            <ul class="status">
+                <li><i class='bx bxs-battery-charging'style='color:#fff'></i><p id="battery"></p></li>
+                <li><i class='bx bx-wifi' style='color:#fff'></i><p id="internet"></p></li>
+                <li><i class='bx bx-wifi' style='color:#fff'></i> <p id="time"></p></li>
+            </ul>
+            <img src="ai.jpg" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap"id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                       <img src="user-pic.jpg" alt="">  
+                    </div>
+                <hr>
+                <div class="sub-menu-link">
+                    <!--place a voice icon-->
+                    <button id="start_jarvis_btn">
+                        <p>Start Recognition</p>
+                      </button>     
+                </div>
+                <div class="sub-menu-link">
+                    <!--place a red voice icon-->
+                    <button id="stop_jarvis_btn">
+                        <p>Stop Recognition</p>
+                      </button>
+                    
+                </div>
+                <a href="#"class="sub-menu-link">
+                    <!--place help icon-->
+                    <button id="showNotificationButton">
+                      <div class="notification-container" id="notificationContainer"></div>
+                        <p>Help and Support</p>
+                      </button>
+                     
+               
+                </div>
+            </div>
+        </nav>
+    </div>
+   
+   
+    <section class="box">
+       <div class="temp">
+      <p id="location"></p>
+      <p id="country"></p>
+      <p id="weatherT"></p>
+      <p id="weatherD"></p>
+      <img src="" id="weatherIcon" />
+      <p id="oTemp"></p>
+      <p id="feelLikeTemp"></p>
+      <p id="minT"></p>
+      <p id="maxT"></p></section>
+      
+     
+    <div class="main2">
+<img src="giphy.gif" class="btn2">
+    </div>
+<!---->
+<div class="jarvis_setup in_middle hide_on_small">
+  <label for="">Username</label>
+  <input type="text" />
+  <br />
+  <label for="">Your Bio</label>
+  <input type="text" />
+  <br />
+  <label for="">Your Location</label>
+  <input type="text" />
+  <br />
+  <label for="">GitHub Profile</label>
+  <input type="text" />
+  <br />
+  <button id="sub_btn">Submit</button>
+</div>
+ 
+    <div class="messages hide_on_small"></div>
+    <div class="commands in_middle hide_on_small"></div>
+    <div class="new_jarvis_window">
+
+    <script src="ai.js"></script>
+    <script src="response.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>

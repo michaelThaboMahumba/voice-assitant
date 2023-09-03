@@ -1,0 +1,187 @@
+
+
+
+<div class="wrapper">
+            <div class="form-box register">
+              <h2>Login</h2>
+              <form action="">
+                <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="email" name="" id="">
+                  <label for="">email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon">
+                    <input type="password" name="" id=""required>
+                    <label for="">Email</label>
+                  </span>
+                </div>
+              </form>
+
+ <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit"id="sub_btn"onclick="auth()" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text"id="Email" placeholder="Email address" required />
+          <input type="password"id="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit"onclick="auth()" value="Login" />
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" required />
+          <input type="text" placeholder="Email address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit"id="sub_btn"onclick="auth()" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text"id="Email" placeholder="Email address" required />
+          <input type="password"id="password" placeholder="Password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit"onclick="auth()" value="Login" />
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="wrapper">
+      <span class="icon-close"></span>
+
+
+  <div class="form-box Login">
+      <h2>LOGIN</h2>
+      <form action="">
+          <div class="input-box">
+              <span class="icon"></span>
+              <input type="email" name="email" id="email">
+              <label for="email">Email</label>
+          </div>
+
+          <div class="input-box">
+              <span class="icon"></span>
+              <input type="password" name="password" id="password">
+              <label for="password">password</label>
+          </div>
+          <div class="remember-forgot">
+              <label for="savalogin"><input type="checkbox" name="" id="savalogin"></label>
+              <a href="#">Forgot password?</a>
+          </div>
+      <button type="submit"class="btn">submit</button>
+      <div class="login-register">
+          <p>Don't have account<a href="#"class="register-link">register</a></p>
+      </div>
+      </form>
+      </div>
+      <div class="form-box register">
+          <h2>Sign Up</h2>
+          <form action="">
+              <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="text"  id="name1">
+                  <label>username</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="email" name="email" id="ID">
+                  <label>Email</label>
+              </div>
+  
+              <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="password" name="password" id="password1">
+                  <label >password</label>
+              </div>
+              <div class="remember-forgot">
+                  <label><input type="checkbox" name="" id="saveRegister"></label>
+                  <a href="licence.html">I agree to the terms & conditions</a>
+              </div>
+          <button type="submit"class="btn">submit</button>
+          <div class="Login-register">
+              <p>already have an account &nbsp;<a href="#"class="login-link">login</a></p>
+          </div>
+          </form>
+          </div>
+ </div> 
+
+body {
+  background-image: linear-gradient(
+    23deg,
+    hsl(49deg 100% 69%) 0%,
+    hsl(16deg 80% 61%) 2%,
+    hsl(330deg 81% 34%) 12%,
+    hsl(259deg 100% 15%) 50%,
+    hsl(212deg 100% 25%) 88%,
+    hsl(197deg 100% 30%) 98%,
+    hsl(183deg 79% 36%) 100%
+  );
+  height: 100vh;
+}
+
+
+
+
+
+
+
